@@ -52,13 +52,13 @@ namespace BSD.Clases
 
         public void imprimir()
         {
-            Console.WriteLine("=========================================");
-            Console.WriteLine("ID: " + this.id);
-            Console.WriteLine("Cédula: " + this.cedula);
-            Console.WriteLine("Nombres: " + this.nombres);
-            Console.WriteLine("Apellidos: " + this.apellidos);
-            Console.WriteLine("Nombres Completos: " + this.nombres_completos);
-            Console.WriteLine("=========================================");
+            Console.WriteLine("==================================================");
+            Console.WriteLine(" ID: " + this.id);
+            Console.WriteLine(" Cédula: " + this.cedula);
+            Console.WriteLine(" Nombres: " + this.nombres);
+            Console.WriteLine(" Apellidos: " + this.apellidos);
+            Console.WriteLine(" Nombres Completos: " + this.nombres_completos);
+            Console.WriteLine("==================================================");
         }
     }
 }
