@@ -21,6 +21,7 @@ namespace BSD
             while (true)
             {
 
+                Console.WriteLine(" EMPRESA O'ASIS S.A.");
                 Console.WriteLine(" SISTEMA CRUD DE CLIENTES");
                 Console.WriteLine();
                 Console.WriteLine(" 1. Registrar un cliente");
