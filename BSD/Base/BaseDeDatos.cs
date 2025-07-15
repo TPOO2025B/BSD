@@ -12,12 +12,20 @@ namespace BSD.BaseDatos
     {
         public static List<Cliente> BaseDatosCliente = new List<Cliente>();
 
-        public static void imprimirCliente()
+        public static void ImprimirClientes()
         {
             foreach (Cliente cliente in BaseDatosCliente)
             {
                 cliente.imprimir();
             }
         }
+
+
+        public static Cliente BuscarClientePorCedula(string parametro_cedula)
+        {
+            return BaseDatosCliente.FirstOrDefault(bdc => bdc.cedula == parametro_cedula);
+        }
+
+
     }
 }

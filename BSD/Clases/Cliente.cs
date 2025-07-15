@@ -10,10 +10,32 @@ namespace BSD.Clases
     public class Cliente
     {
         private int id;
-        private string cedula;
+        public string cedula;
         private string nombres;
         private string apellidos;
         private string nombres_completos;
+
+        public void setNombres(string nombres)
+        {
+            this.nombres = nombres;
+            this.nombres_completos = nombres + " " + this.apellidos;
+        }
+
+        public void setApellidos(string apellidos)
+        {
+            this.apellidos = apellidos;
+            this.nombres_completos = this.nombres + " " + apellidos;
+        }
+
+        public string getNombresCompletos()
+        {
+            return this.nombres_completos;
+        }
+
+        public int getID()
+        {
+            return this.id;
+        }
 
         public Cliente(string cedula, string nombres, string apellidos)
         {
